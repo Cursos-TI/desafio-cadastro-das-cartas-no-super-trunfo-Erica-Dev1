@@ -16,8 +16,8 @@ int main()
     float superPoder1;
 
     /*Exemplos de dados, para a carta 1
-    -Sigla:SP -Código:01 -Nome da cidade:Osasco -População:12400000
-     Área km²:1521202 -PIB:8289 -Pontos Turísticos:50*/
+    -Sigla:SP -Código:01 -Nome da cidade:Osasco -População:1240000
+     Área km²:15212.02 -PIB:828.9 -Pontos Turísticos:50*/
 
     /*Coletando dados, Carta 1*/
     printf("***Bem vindos ao Super Trunfo Brasil!***\n");
@@ -67,7 +67,7 @@ int main()
 
     /*Exemplos de dados, para a carta 2
     -Sigla:CE -Código:02 -Nome da cidade:Fortaleza -População:13410000
-     Área km²:1321202 -PIB:6289 -Pontos Turísticos:40*/
+     Área km²:13212.02 -PIB:628.9 -Pontos Turísticos:40*/
 
     /*Coletando dados, Carta 2*/
     printf("--Carta 2--\n");
@@ -100,7 +100,7 @@ int main()
                   numPontosTuristico2 + pibPerCapita2 + (1 / densidadePopulacional2);
 
     /*Exibindo os dados finais das duas cartas*/
-    printf("\n===RESULTADOS===\n");
+    
     printf("\n----Carta 1---\n");
     printf("Estado:%s\n", estado1);
     printf("Codigo da carta:A%d\n", codigoCarta1);
@@ -126,9 +126,10 @@ int main()
     printf("Super Poder: %.2f\n", superPoder2);
 
     // comparar cartas 1= carta1 ganha  0 = carta2 ganha
-    printf("\nSe o resultado for 1 a (carta 1) vence.");
+    printf("\n---Quem venceu?---\n");
+    printf("Se o resultado for 1 a (carta 1) vence.\n");
     printf("Se o resultado for 0 a (carta 2) vence.\n");
-
+    printf("\n===RESULTADOS===\n");
     printf("Resultado População:%d\n", populacao1 > populacao2);
     printf("Resultado Área:%d\n", area_Km2_1 > area_Km2_2);
     printf("Resultado PIB:%d\n", pib1 > pib2);
